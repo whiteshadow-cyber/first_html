@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basics</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            background-color: #0c0c0c;
+            color: #f3e9e9;
+        }
+
+        .header {
+            background-color: #9f16da;
+            color: #123abe;
+            padding: 20px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(189, 80, 80, 0.849);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+        .card, .card h2, .card p {
+            color: #000;
+        }
+
+        .card img {
+         width: 220px;
+         height: 220px;
+         object-fit: cover;
+         margin-bottom: 10px;
+}
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: rgb(59, 215, 140);
+        }
+
+        nav {
+            display: flex;
+            gap: 50px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="main-title">Flex Basics</h1>
+        <nav>
+            <a href="w2_c3_css.html">CSS Basics</a>
+            <a href="w3_c1_flex.html">Flex Basics</a>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <img src="images/rdr2.png" alt="Red Dead Redemption 2">
+            <h2>RED DEAD REDEMPTION 2</h2>
+            <p>PRICE: 50$</p>
+        </div>
+        <div class="card">
+            <img src="images/tlou.png" alt="Last of Us">
+            <h2>LAST OF US </h2>
+            <p>PRICE: 60$</p>
+        </div>
+        <div class="card">
+            <img src="images/gta5.png" alt="GTA 5">
+            <h2>GTA 5</h2>
+            <p>PRICE: 80$</p>
+        </div>
+        <div class="card">
+            <img src="images/gta6.png" alt="GTA 6">
+            <h2>GTA 6</h2>
+            <p>PRICE: 100$</p>
+        </div>
+        
+    </main>
+</body>
+
+</html>

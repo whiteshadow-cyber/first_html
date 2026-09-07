@@ -1,0 +1,7 @@
+*
+!*.html
+!.gitignore
+git rm -r --cached .
+git add .
+git commit -m "Track only HTML files"
+git push
